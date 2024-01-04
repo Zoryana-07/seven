@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webDev</title>
+</head>
+<body>
+ <h1>Заголовок первого уровня</h1>
+ <h2>Заголовок второго уровня</h2>
+ <h3>Заголовок третьего уровня</h3>
+ <h4>Заголовок четвертого уровня</h4>
+ <h5>Заголовок пятого уровня</h5>
+ <h6>Заголовок шестого уровня</h6>   
+
+ <p>Это абзац. Просто абзац.</p>
+
+ <p>А это - горизонтальная линия.</p>
+ <hr>
+ <br>
+
+ <address>Этот тег предназначен для хранения информации об авторе.</address>
+
+ <blockquote><p>Так оформляется большая-пребольшая цитата. Вот вообще большая. Но цитата. Чтобы было понятней, что это цитата Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem delectus minus dicta suscipit ut praesentium consequatur incidunt! Temporibus a quos iure explicabo repellendus aliquid, iusto placeat similique obcaecati illum consectetur.</div></p></blockquote>
+
+<time>1989-01-26</time> <br>
+<time datetime="02.03.1984">My birthday</time><br> 
+
+<p><b>Bold text</b>- жирный текст</p>
+<p><i>Italic text</i> - курсивный текст</p>
+<p><tt>Typing text</tt> - машинописный текст</p>
+<p><s>Deleted text</s> - зачеркнутый текст</p>
+
+<p>Но никакой <b>семантической составляющей</b> у этих тегов нет, работ не поймет логического акцента.</p>
+<p>В последней версии html эти теги заменяются тегами, которые несут <b>логический акцент:</b></p>
+<p><strong>Bold text</strong> - жирный текст</p>
+<p><em>Italic text</em> - курсивный текст</p>
+
+<code>Для отображения кусков программного кода meta charset="UTF-8"</code>
+
+<pre>
+    <code>
+        meta charset="UTF-8"
+        meta name="viewport" content="width=device-width, initial-scale=1.0"
+        link rel="stylesheet" href="CSS\main.css"
+        title>Работа с GIT/title        
+    </code>
+</pre>
+
+<small>Уменьшение текста</small>
+<big>Увеличение текста</big>
+<del>Зачеркнутый текст</del>
+<p>Нижний индекс - H<sub>2</sub>O</p>
+<p>Верхний индекс - e = mc<sup>2</sup></p>
+
+<h2>Списки</h2>
+<h3>Маркированные списки</h3>
+<P>ul - unordered list - неупорядоченный список</P>
+<p>li - list item - пункт списка</p>
+<ul>
+    <li>Булгаков</li>
+    <li>Достоевский</li>
+    <li>Толстой</li>
+    <li>Чехов</li>
+</ul>
+
+<h3>Нумерованные списки</h3>
+<p>ol - ordered list - упорядоченный список</p>
+<p>li - list item - пункт списка</p>
+<ol start="9">
+    <li>Булгаков</li>
+    <li>Достоевский</li>
+    <li>Толстой</li>
+    <li>Чехов</li>
+</ol>
+
+<ol reversed>
+    <li>Один</li>
+    <li>Два</li>
+    <li>Три</li>
+    <li>Четыре</li>
+    <li>Пять</li>
+    <li>Шесть</li>
+</ol>
+
+<h3>Вложенные списки</h3>
+
+<ol>
+    <li> Русские писатели
+        <ul>
+            <li>Михаил Булгаков</li>
+            <li>Федор Достоевский</li>
+            <li>Лев Толстой</li>
+            <li>Антон Чехов</li>
+        </ul>
+    </li>
+    <li> Зарубежные писатели
+        <ul>
+            <li>Теодор Драйзер</li>
+            <li>Джек Лондон</li>
+            <li>Жюль Верн</li>
+            <li>Рэй Бредбери</li>
+        </ul>
+    </li>
+</ol>
+
+<h3>Списки определений</h3>
+<dl>
+    <dt>Тег</dt>
+        <dd>Тег - это специальный символ разметки, который применяется для вставки различных элементов на веб-страницу таким как: рисунки, таблицы, символы и др., и для изменения их вида.</dd>
+    <dt>HTML-документ</dt>
+        <dd>Обычный текстовый файл, который может содержать в себе текств, теги и стили. Изображения и другие объекты хранятся отдельно. Содержимое такого файла обычно называется HTML-код.</dd>
+    <dt>Сайт</dt>
+        <dd>Сайт - это набор отдельных веб-страниц, которые связаны между собой ссылками и единым оформлением.</dd>
+</dl>
+
+<h3>Изображения</h3>
+<!--simple image-->
+<img src="C:\Users\user\Desktop\VS Code папка PR1\images\vk.png" alt="Логотип Вконтакте">
+
+<!--responsive image--><!--НЕ ОТОБРАЖАЕТСЯ-->
+<picture>
+   <source media="(min-width: 1024px)" srcset="C:\Users\user\Desktop\VS Code папка PR1\images\vk.png">
+   <source media="(min-width: 768px)" srcset="C:\Users\user\Desktop\VS Code папка PR1\images\vk.png">
+   <source media="(min-width: 360px)" srcset="C:\Users\user\Desktop\VS Code папка PR1\images\vk.png">
+</picture>
+
+<!--image with semantic discription-->
+<figure>
+    <img src="C:\Users\user\Desktop\VS Code папка PR1\images\Vazanie.jpg" alt="Вязание">
+    <figcaption>Это изображение для вкладки о вязании</figcaption>
+</figure>
+
+<figure>
+    <img src="C:\Users\user\Desktop\VS Code папка PR1\images\Vazanie.jpg" alt="Вязание">
+    <img src="C:\Users\user\Desktop\VS Code папка PR1\images\Tkani.jpg" alt="Ткани">
+    <img src="C:\Users\user\Desktop\VS Code папка PR1\images\Kvilling.jpg" alt="Квиллинг">
+    <figcaption><p>Все эти изображения используются для создания сайта о рукоделии. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas quisquam facilis sint possimus explicabo eaque obcaecati, incidunt quae, ipsum ad dolor itaque dicta aut optio, necessitatibus aliquid molestias delectus!</p></figcaption>
+</figure>
+
+<h3>Таблицы</h3>
+<table>
+    <caption>Пищевая ценность</caption>
+    <thead>
+        <tr>
+            <th>Блюда</th>
+            <th>Калории</th>
+            <th>Жиры</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Куриный бульон</td>
+            <td>120</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Салат Цезарь</td>
+            <td>400</td>
+            <td>26</td>
+        </tr>        
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Итого:</td>
+            <td colspan="2">520</td>            
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html> 
+
+<h3>Ссылки</h3>
+<a href="https://www.youtube.com/watch?v=_J6hMLsscOo" target="_blank">Ссылка на Youtube</a>
+
+<h3>Кнопки</h3>
+<button type="button">Button</button><br><br>
+<button type="submit">Button</button><br><br>
+<button type="reset">Button</button><br><br>
+<button type="button" autofocus>Botton</button><br><br>
+<button disabled="disabled">Button</button><br><br>
+
+<h3>Полезные теги</h3>
+
+<h2>Аббревиатура</h2>
+<abbr title="Hyper Text Markup Language">HTML</abbr><br>
+
+
+<h2>Даталист</h2> 
+<input list="list">
+<datalist id = "list">
+    <option value="Красный"></option>
+    <option value="Желтый"></option>
+    <option value="Зеленый"></option>
+</datalist>
+<br><br><br>
+
+<h2>Meter</h2>
+<meter  value="0" max="100" low="10" high="60">Course progress</meter>
+<br>
+<meter  value="20" max="100" low="40" high="60">Course progress</meter>
+<br>
+<meter  value="80" max="100" low="10" high="60">Course progress</meter>
+<br>
+<meter  value="100" max="100">Course progress</meter>
+<br>
+
+<h2>Progress bar</h2>
+<progress value="30" max="100"></progress>
+
+<h2>No scripts tag</h2>
+<noscript>Please switch on scripts in your browser!</noscript>
+<br>
+
+<h2>Marked</h2>
+<p>Просто текст,<mark> важный момент</mark> в тексте.</p>
+<br>
+
+<h2>Глобальная структура сайта</h2>
+<header>Шапка сайта или раздел, в котором обычно располагается заголовок</header>
+<nav>Данный тег задает навигацию по сайту, можно использовать несколько тегов <nav> в одном документе</nav>
+<main>Основное содержимое документа</main>
+<section>Задает раздел документа, который может применяться для блока новостей, контактной информации, глав текста, различных описаний и так далее. Также, вполне допускается вкладывать один <section> внуть другого</section>
+<aside>Определяет блок сбоку от сновного контента. Предназначен для размещеия ссылок. банеров и другой информации. Называется sidebar или боковая панель.</aside>
+<footer>Подвал сайта</footer>
+<article>Задает содержание сайта - новости, статьи, записи блога и так далее, другими словами, это семантически выделенный блок информации</article>
+<br>
+
+<h2>Формы</h2>
+<form action="formHandler.php" name="simple form" autocomplete="on">
+    <input type="text">
+    <br>
+
+</form>
+
+<p>action=" " - указывает файл, который будет отвечать за механизм отправки данных на сервер.</p>
+<p>name=" " - каждой форме можно задать имя, чтобы отправляемые данные связывались с определенным именем. Нужно это, так как на странице может быть несколько форм и name позволяет понять, с какой конкретно формы были отправлены данные</p>
+<p>autocomplite=" " - автозаполнение, если данный атрибут поставить на форму, и если стараницу, имеющую такую форму вы уже хоть раз открывали и заполняли, то данные при заполнении вам будут предлагаться автоматически.</p>
+<fieldset>
+    <legend>Simple form legend</legend>
+    <input type="text">
+    <br>
+    <select>
+        <option value="Front-end">Front-end</option>
+        <option value="Back-end">Back-end</option>
+      </select><br>
+  
+      <textarea rows="10" cols="45" name="text"></textarea><br>
+  
+      <input type="submit"><br>
+  
+      </fieldset>
+  
+    </form>
+    <hr>
+  
+    <!-- Inner fieldset & label -->
+    <form action="formHandler.php" name="simple form3">
+  
+      <fieldset>
+        <legend>Personal data</legend>
+        <input type="text" /><br>
+        <select>
+          <option value="Front-end">Front-end</option>
+          <option value="Back-end">Back-end</option>
+        </select><br>
+      </fieldset>
+  
+      <fieldset>
+        <legend>Personal Message</legend>
+        <textarea rows="10" cols="45" name="text"></textarea><br>
+      </fieldset>
+  
+      <input type="submit"><br>
+  
+    </form>
+    <hr>
+  
+    <!-- Form element label -->
+    <label for="username">Username</label>
+    <input id="username"><br>
+  
+    <label>
+      Password
+      <input type="password">
+    </label>
+    <hr>
+  
+    <!-- Result form -->
+    <form action="formHandler.php" name="simple form3">
+  
+      <fieldset>
+        <legend>Personal data</legend>
+        <label for="name">Your name</label>
+        <input type="text" id="name" /><br>
+        <label for="speciality">Choose your speciality</label>
+        <select id="speciality">
+          <option value="Front-end">Front-end</option>
+          <option value="Back-end">Back-end</option>
+        </select><br>
+      </fieldset>
+  
+      <fieldset>
+        <legend>Personal Message</legend>
+        <label for="message">Enter your message</label>
+        <textarea id="message" rows="10" cols="45" name="text"></textarea><br>
+      </fieldset>
+  
+      <input type="submit"><br>
+  
+    </form>
+    <hr>
+  
+    <!-- Textarea -->
+    <textarea rows="10" cols="45"></textarea><br>
+    <textarea rows="5" cols="20" name="test"></textarea><br>
+    <textarea rows="5" cols="20" autofocus></textarea><br>
+    <textarea rows="5" cols="20" disabled></textarea><br>
+    <textarea rows="5" cols="20" readonly>This text you can't change</textarea><br>
+    <textarea rows="5" cols="20" placeholder="your message..."></textarea><br>
+    <textarea rows="5" cols="20" maxlength="5"></textarea><br>
+    <textarea rows="5" cols="20" required></textarea><br>
+    <hr>
+  
+    <!-- Required attribute -->
+    <form>
+      <textarea rows="5" cols="20" required></textarea><br>
+      <input type="submit" value="Send">
+    </form>
+    <hr>
+  
+    <!-- Select -->
+    <select>
+      <option value="Front-end">Front-end</option>
+      <option value="Back-end">Back-end</option>
+    </select>
+    <hr>
+  
+    <!-- Select with optgroup -->
+    <select>
+      <optgroup label="Speciality">
+        <option value="Front-end">Front-end</option>
+        <option value="Back-end">Back-end</option>
+      </optgroup>
+  
+      <optgroup label="Direction">
+        <option value="Mobile">Mobile development</option>
+        <option value="Node">Node.js development</option>
+      </optgroup>
+    </select>
+    <hr>
+  
+    <!-- Multiple select -->
+    <select multiple>
+      <option value="Front-end">Front-end</option>
+      <option value="Back-end">Back-end</option>
+    </select>
+    <hr>
+  
+    <!-- Different options -->
+    <select>
+      <option value="Front-end">Front-end</option>
+      <option value="Back-end" label="Back-end">
+      <option value="sel" selected>Selected</option>
+      <option value="dis" disabled>Disabled</option>
+    </select>
+    <hr>
+</fieldset>
