@@ -313,13 +313,21 @@
   
     <!-- Textarea -->
     <textarea rows="10" cols="45"></textarea><br>
+    <p>textarea - это элемент формы, предназначенный для введения в него большого текста. rows и cols определяют строки и колонки в текстовом поле</p>
     <textarea rows="5" cols="20" name="test"></textarea><br>
+    <p>name - универсальный атрибут полей  для установки имени</p>
     <textarea rows="5" cols="20" autofocus></textarea><br>
+    <p>autofocus - атрибут, который автоматически фокусирует поле, на которое он добавлен</p>
     <textarea rows="5" cols="20" disabled></textarea><br>
+    <p>disabled - делает поле недоступным</p>
     <textarea rows="5" cols="20" readonly>This text you can't change</textarea><br>
+    <p>readonly - окно остаётся активным, но данные в него ввести не получится</p>
     <textarea rows="5" cols="20" placeholder="your message..."></textarea><br>
+    <p>placeholder - добавляет текст - заменитель, который исчезнет, как только вы введете какое - либо значение</p>
     <textarea rows="5" cols="20" maxlength="5"></textarea><br>
+    <p>maxlength - максимальное число для вводимых символов, больше ввести не получится</p>
     <textarea rows="5" cols="20" required></textarea><br>
+    <p>required - универсальный атрибут для полей, он говорит о том, что поле обязательно должно быть заполнено</p>
     <hr>
   
     <!-- Required attribute -->
@@ -364,5 +372,76 @@
       <option value="sel" selected>Selected</option>
       <option value="dis" disabled>Disabled</option>
     </select>
-    <hr>
+    <hr> 
 </fieldset>
+
+<h2>Input</h2>
+<!-- Text -->
+<p>Просто позволяет вводить любые символы</p>
+<input type="text">
+<hr>
+
+<!-- Number -->
+<p>Предназначено для введения числовых значений</p>
+<input type="number"><br>
+<p>min и max устанавливают минимальное и максимальное значение для вводимого числа</p>
+<input type="number" min="1" max="10"><br>
+<p>step - данный атрибут используется для установления шага измерения числа при клике на стрелочку</p>
+<input type="number" step="5"><br>
+<hr>
+
+<!-- Password -->
+<p>Поле для пароля</p>
+<input type="password">
+<hr>
+
+<!-- Range -->
+<p>Предназначен для ранжирования</p>
+<input type="range">
+<hr>
+
+<!-- Date -->
+<p>Для задания даты</p>
+<input type="date">
+<hr>
+
+<!-- Color -->
+<p>Открывает панель выбора цвета</p>
+<input type="color">
+<hr>
+
+<!-- Submit & reset buttons -->
+<p>Если бы эта кнопка была в в форме, то при клике на нее наша форма отправилась бы</p>
+<input type="submit"><br>
+<p>Её задача - очищать все поля формы</p>
+<input type="reset"><br>
+<hr>
+
+<!-- Submit & reset buttons with custom labels -->
+<input type="submit" value="Submit form"><br>
+<input type="reset" value="Reset form"><br>
+<hr>
+
+<!-- List of options -->
+<input type="text" list="list">
+<datalist id="list">
+  <option value="Front-end">
+  <option value="Back-end">
+  <option value="Full-stack">
+</datalist>
+<hr>
+
+<!-- E-mail -->
+<p>Для введения e-mail</p>
+<input type="email">
+<hr>
+
+<!-- URL -->
+<p>Для введения url-адреса</p>
+<input type="url">
+<hr>
+
+<!-- Input image -->
+<p>Кнопка для отправки в виде изображения</p>
+<input type="image" src="https://picsum.photos/300/300" alt="Just image">
+<hr>
