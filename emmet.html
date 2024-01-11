@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet</title>
+</head>
+<body>
+ <p>Осваиваем Emmet</p>
+    <P>Дочерние элементы создаются так: 
+
+    nav>ul>li</P>   
+
+    <nav>
+        <ul>
+            <li></li>
+        </ul>
+    </nav>
+
+    <img src="" alt="">
+
+    <p>div>p</p>
+    
+    <div>
+        <p></p>
+    </div>
+ 
+   <p>
+
+    Соседние элементы создаются так:
+    
+    div+p+bq
+    
+    эта аббревиатура сгенерирует следующий HTML код:
+    
+    <div></div>
+    
+    <p></p>
+    
+    <blockquote></blockquote>
+    </p>
+
+    <div></div>
+    <p></p>
+    <blockquote></blockquote>
+
+   <P>nav>ul>li+li+li</P>
+    <nav>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </nav>
+
+    <p>Выйти на один уровень выше можно так:
+
+        div+div>p>span+em^bq</p>
+
+        <div></div>
+        <div>
+            <p><span></span><em></em></p>
+            <blockquote></blockquote>
+        </div>
+
+        <p>Выйти на два уровня выше можно так:
+
+            div+div>p>span+em^^bq</p>
+
+            <div></div>
+            <div>
+                <p><span></span><em></em></p>
+            </div>
+            <blockquote></blockquote>
+            
+        <p>Чтобы после какого-то исправления или вставки записи активировать emmet:
+            ctrl+пробел
+        </p>
+            
+
+
+</nav>
+</body>
+</html>

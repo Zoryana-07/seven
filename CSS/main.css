@@ -1,7 +1,8 @@
 body {
     background-color: aquamarine;
     p {
-        color:rgb(238, 45, 45);        
+        color:rgb(238, 45, 45);
+        font-size: 10px;        
     }
 
     h2 {

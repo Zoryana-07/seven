@@ -445,3 +445,228 @@
 <p>Кнопка для отправки в виде изображения</p>
 <input type="image" src="https://picsum.photos/300/300" alt="Just image">
 <hr>
+
+<!-- Telephone -->
+<P>Для введения телефона</P>
+<input type="tel">
+<hr>
+
+<!-- Search -->
+<p>Для ввода поискового запроса</p>
+<input type="search">
+<hr>
+
+<!-- Local date & time -->
+<p>Для ввода местных даты и времени</p>
+<input type="datetime-local">
+<hr>
+
+<!-- Month -->
+<p>Для выбора месяца</p>
+<input type="month">
+<hr>
+
+<!-- Time -->
+<p>Для введения времени</p>
+<input type="time">
+<hr>
+
+<!-- Week -->
+<p>Для выбора недели</p>
+<input type="week">
+<hr>
+
+<!-- Hidden -->
+<p>hidden визуально не отображается, используется для передачи в форме промежуточных или дополнительных данных, которые пользователь не должен изменять. Такие данные пользователю не показываются, но, возможно, они нужны для корректного отображения скриптов или трекинга какой-либо информации.</p>
+<input type="hidden" value="webDev">
+<hr>
+
+<!-- File -->
+<p>Для передачи и хранения каких-то пользовательских файлов.</p>
+<input type="file"><br>
+<p>Атрибут multiple помогаетзагружать несколько файлов, так как по умолчанию возможна загрузка только одного</p>
+<input type="file" multiple><br>
+<hr>
+
+<!-- Checkbox -->
+<p>Checkbox предназначен для выбора нескольких опций</p>
+<input type="checkbox" value="option1"><br>
+<input type="checkbox" value="option2"><br>
+<input type="checkbox" value="option3"><br>
+<hr>
+
+<!-- Radio -->
+<p>Radio предназначен для выбора одного значения из списка предложений. Нужно задать одинаковое значение для атрибута name</p>
+<input type="radio" name="value" value="option1"><br>
+<input type="radio" name="value" value="option2"><br>
+<input type="radio" name="value" value="option3"><br>
+<hr>
+
+<!-- Checkbox with checked element -->
+<p>Полезный атрибут checked, с помощью которого можно задать, какая из опций будет выбрана по дефолту автоматически</p>
+<input type="checkbox" value="option1" checked><br>
+<input type="checkbox" value="option2"><br>
+<input type="checkbox" value="option3"><br>
+<hr>
+
+<!-- Radio with checked element -->
+<input type="radio" name="value" value="option1"><br>
+<input type="radio" name="value" value="option2" checked><br>
+<input type="radio" name="value" value="option3"><br>
+<hr>
+
+<!-- Checkbox with label -->
+<label>
+  <input type="checkbox" value="option1" checked>
+  Front-end dev
+</label><br>
+<label>
+  <input type="checkbox" value="option2">
+  Back-end dev
+</label><br>
+<label>
+  <input type="checkbox" value="option3">
+  Full-stack dev
+</label>
+<hr>
+
+<!-- Radio with label -->
+<label>
+  <input type="radio" name="value" value="option1">
+  Front-end dev
+</label><br>
+<label>
+  <input type="radio" name="value" value="option2" checked>
+  Back-end dev
+</label><br>
+<label>
+  <input type="radio" name="value" value="option3">
+  Back-end dev
+</label>
+<hr>
+
+<h2>Аудио и видео файлы</h2>
+<!-- Audio -->
+<p>Если подключать только один аудио файл</p>
+<p>"Your browser does not support the audio tag" - будет отображаться если вдруг формат медиа файла не поддерживается в браузере</p>
+<audio src="example.mp3">
+  Your browser does not support the audio tag.
+</audio>
+<hr>
+
+<!-- Video -->
+<p>Если подключать несколько видео файлов</p>
+<video width="320" height="240">
+  <source src="example.ogg" type="video/ogg">
+  <source src="example.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<hr>
+
+<!-- Audio -->
+<p>controls - добавляет элементы контроля для наших медийных файлов и теперь они выглядят как будто они находятся в плеере</p>
+<audio controls>
+  <source src="example.mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+<hr>
+
+<!-- Video -->
+<p>width, height - атрибуты ширины и высоты для видео</p>
+<video controls width="320" height="240">
+  <source src="example.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<hr>
+
+<p>loop - атрибут запускает бесконечное воспроизведение аудио или видео файлов, т.е. как только воспроизведение файла подходит к концу , осуществляется автоматическая перемотка к началу</p>
+<video controls loop width="320" height="240">  
+  <source src="example.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<hr>
+
+<p>autoplay - автоматическое проигрывание аудио или видео файла при загрузке страницы. Лучше не примерять.</p>
+<video controls autoplay width="320" height="240">
+  <source src="example.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<hr>
+
+<p>muted - атрибут позволяет убрать звук у файла при загрузке страницы. В дальнейшем звук можно вернуть, но по умолчанию от отключается</p>
+<video controls muted width="320" height="240">  
+  <source src="example.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<hr>
+
+<p>poster - с помощью данного атрибута можно указать адрес картинки, которая будет отображаться пока видео не доступно или пока оно грузится</p>
+<video controls poster="preview.png" width="320" height="240">
+  <source src="example.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<hr>
+
+<h2>Общие и полезные атрибуты</h2>
+<!-- ID -->
+<p>Используют, чтобы найти элемент и "повесить" на него с помощью JS какой-то обработчик, или добавить функциональность.</p>
+<h1 id="heading">Simple text</h1>
+<hr>
+
+<!-- Class -->
+<p>id - </p>
+<p class="text idea">Simple text</p>
+<p class="text">Simple text 2</p>
+<hr>
+
+<!-- Title -->
+<p>class - атрибут, который может связать тег с прделенными стилями. У одного элемента может быть сразу несколько классов.</p>
+<h2 title="HyperText Markup Language">HTML</h2>
+<hr>
+
+<!-- Inline styles -->
+<p>style - с помощью этого атрибута можно добавить стили, но использовать его нежелательно.</p>
+<h2 style="color: red;">CSS</h2>
+<hr>
+
+<!-- Contenteditable -->
+<p>contenteditable - при добавлении на тег он сообщает, что элемент становится доступным для редактирования. При клике пользователь может начать редактировать текст, либо удалить его. Если псле этого обновить страницу браузера, то она вернеться в изначальное состояние, то есть все изменения отменяться.</p>
+<h2 contenteditable="true">This content you can change</h2>
+<hr>
+
+<!-- Spellcheck -->
+<p>spellcheck -этот атрибут включает проверку правописания. Его можно применять к тегам input, textarea, а также к тегам, у которых есть атрибут contenteditable. Помимо этого, в браузере должна быть включена проверка правописания.</p>
+<textarea spellcheck="true" rows="10" cols="45" name="text">
+  This text cantain a cople misstakes
+</textarea>
+<hr>
+
+<!-- Hidden -->
+<p>hidden - для того, чтобы скрывать содержимое элемента. Такой элемент визуально на странице не виден, но он по прежнему доступен в DOM дереве, а это значит, что с помощью JS с ним можно манипулировать и при выполнении какого-то условия его динамически можно показать, убрав этот атрибут.</p>
+<h2 hidden>Hidden content</h2>
+<hr>
+
+<!-- Without tabindex -->
+<p>tabindex - распространенный атрибут, который используется при добавлении доступности на сайт. Его задача заключается в установке порядка фокуса на различных элементах.</p>
+<input type="text" placeholder="name"><br>
+<input type="text" placeholder="password"><br>
+<input type="button" value="Submit"><br>
+<hr>
+
+<!-- With tabindex -->
+<p></p>
+<input type="text" placeholder="name" tabindex="1"><br>
+<input type="text" placeholder="password" tabindex="3"><br>
+<input type="button" value="Submit" tabindex="2"><br>
+<hr>
+
+<!-- Text direction -->
+<p>dir - с помощью этого атрибута можно менять направление текста в теге, то есть, например, установить его справа налево.</p>
+<h2 dir="rtl">Hello world!</h2>
+<hr>
+
+<!-- Language -->
+<p>lang - позволяет задать код языка, в результате чего подключаются определенные грамматические особенности.</p>
+<h2 lang="fr"><q>Hello world!</q></h2>
+<h2 lang="en"><q>Hello world!</q></h2>
+<hr>
